@@ -1,0 +1,14 @@
+.newPlants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1;
+    grid-row: 5;
+    .tittle {
+        font-size: 65px;
+        font-weight: bold;
+    }
+    .description {
+        align-self: center;
+        justify-self: end;
+    }
+}

@@ -1,0 +1,59 @@
+.blockCartPrice {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 200px 60px 60px;
+  padding: 10px;
+  cursor: default;
+  max-height: 330px;
+  border-radius: 15px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.blockCartPrice:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px black;
+}
+.blockCartPrice .descCart {
+  align-self: center;
+}
+.blockCartPrice .descCart .desctitle {
+  font-size: 25px;
+}
+.blockCartPrice .descCart .descSubtittle {
+  opacity: 0.8;
+}
+.blockCartPrice .imgCart {
+  grid-row: 1;
+  grid-column: 1;
+}
+.blockCartPrice .imgcartPrice {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blockCartPrice .cartBlockAdd {
+  grid-row: 3;
+  grid-column: 1;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.blockCartPrice .cartBlockAdd .btnAdd {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.blockCartPrice .cartBlockAdd .btnAdd ._btn {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blockCartPrice .cartBlockAdd .btnAdd .imguncheck {
+  opacity: 0.7;
+}/*# sourceMappingURL=cartsPrice.css.map */

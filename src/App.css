@@ -1,38 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Parkinsans", sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 50px auto 50px;
+  background-color: #347f6e;
+  position: relative;
+}
+.App .swiper-pagination {
+  grid-row: 3;
+}
+.App .blockUpArrow {
+  position: fixed;
+  bottom: 2em;
+  width: 50px;
+  height: 50px;
+  right: 5em;
+  cursor: pointer;
+}
+.App .blockUpArrow .arrowup {
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 15px;
+  position: relative;
+}
+.swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  transform: translate(-15%, -15%);
+  height: 20px;
+  display: block;
+  border: 1px solid black;
+  background: none;
+  top: 0;
+  left: -10;
+  border-radius: 20px;
+  animation: circle 0.2s ease-in-out linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.swiper-pagination-bullet-active {
+  background-color: black !important;
+}/*# sourceMappingURL=App.css.map */

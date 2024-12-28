@@ -1,0 +1,117 @@
+.shopCards {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: white;
+    height: auto;
+    border-radius: 15px;
+    position: relative;
+    .moreassortment {
+        grid-column: 2;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 110px 250px 1fr 1fr;
+        grid-template-rows: 150px;
+        border-bottom: 2px solid black;
+        .inputSearch {
+            grid-row: 1;
+            grid-column: 3;
+            align-self: center;
+            justify-self: center;
+            .closeblock {
+                display: flex;
+                position: relative;
+                align-items: center;
+                width: 400px;
+                height: 40px;
+            }
+            .closeSvg {
+                cursor: pointer;
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                right: 0;
+                align-self: center;
+                object-fit: cover;
+            }
+            .search {
+                border: none;
+                outline: none;
+                width: 400px;
+                height: 40px;
+            }
+        }
+        .linksimg {
+            grid-column: 1;
+            align-self: center;
+            .pngplants {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .blockCart {
+            display: grid;
+            grid-template-columns: 100px 1fr 30px;
+            grid-template-rows: 60px;
+            grid-column: 4;
+            align-self: center;
+            justify-self: end;
+            cursor: default;
+            position: relative;
+            .cartsBlocks {
+                display: flex;
+                position: relative;
+                grid-column: 1;
+                cursor: pointer;
+                justify-self: start;
+                align-content: center;
+                .blockCount {
+                    display: flex;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 20px;
+                    background-color: rgb(248, 115, 66);
+                    position: absolute;
+                    right: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    .countercart {
+                        color: white;
+                    }
+                }
+                #cart {
+                    width: 55%;
+                    height: 60%;
+                }
+            }
+            .currenc {
+                grid-column: 2;
+                align-self: center;
+                justify-self: center;
+            }
+        }
+        .headName {
+            grid-column: 2;
+            text-decoration: none;
+            color: black;
+            align-self: center;
+            justify-self: start;
+            font-size: 30px;
+            .subhead {
+                font-size: 20px;
+                opacity: 0.8;
+            }
+        }
+    }
+    .moreassortment {
+        display: flex;
+        padding: 20px;
+        min-height: 740px;
+        grid-column-gap: 10px;
+        border-radius: 0px 0px 15px 10px;
+        grid-row-gap: 20px;
+        flex-flow: wrap;
+        background-color: rgb(247, 225, 225);
+    }
+}

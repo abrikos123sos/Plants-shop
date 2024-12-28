@@ -1,0 +1,31 @@
+.blockInfo {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(226, 224, 223);
+}
+.blockInfo .eachPlant {
+  margin-top: 20px;
+  font-size: 19px;
+  grid-column: 3;
+  font-weight: 600;
+}
+.blockInfo .videoBlock {
+  grid-column: 2;
+  place-self: center;
+}
+.blockInfo .videoBlock .videoMake {
+  width: 200px;
+  height: 150px;
+  border-radius: 15px;
+  background: url(../../../public/img/background.jpg) center;
+  background-size: cover;
+}
+.blockInfo .infoTxt {
+  align-self: center;
+  margin-left: 20px;
+}
+.blockInfo .infoTxt .p1 {
+  font-weight: bold;
+  font-size: 30px;
+}/*# sourceMappingURL=InfoContent.css.map */

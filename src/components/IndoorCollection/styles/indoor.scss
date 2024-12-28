@@ -1,0 +1,98 @@
+.tittleCollection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-row: 7;
+    align-items: center;
+    grid-column: 1;
+    cursor: default;
+    .descIndoor {
+        font-weight: bold;
+    }
+    .titleIndoor {
+        font-size: 100px;
+        font-weight: bold;
+    }
+}
+
+.indoorCollection {
+    grid-row: 8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    justify-content: space-between;
+    .indoorsblock1 {
+        display: grid;
+        border-radius: 15px;
+        object-fit: contain;
+        position: relative;
+        overflow: hidden;
+        position: relative;
+        .viewBtn {
+            display: block;
+            background: none;
+            transition: all 0.4s ease-in-out;
+            border: 1px solid white;
+            .rightarrow {
+                width: 60%;
+                height: 100%;
+                align-content: center;
+                justify-content: center;
+                z-index: 3;
+            }
+            &:hover {
+                background: white;
+            }
+        }
+        &:hover {
+            .nameIndoor {
+                opacity: 0;
+            }
+            .hoversBlockDesc {
+                opacity: 1;
+            }
+        }
+        .hoversBlockDesc {
+            transition: all 0.5s ease-in-out;
+            position: absolute;
+            width: 95%;
+            justify-self: center;
+            height: 50%;
+            border-radius: 20px;
+            bottom: 5px;
+            backdrop-filter: blur(5px);
+            opacity: 1;
+            padding: 10px;
+            font-size: 40px;
+            color: white;
+            overflow: hidden;
+            opacity: 0;
+            .hoverDesc {
+                font-size: 15px;
+                word-break: break-all;
+            }
+        }
+        .nameIndoor {
+            transition: all 0.5s ease-in-out;
+            align-self: end;
+            color: white;
+            justify-self: end;
+            z-index: 2;
+            font-size: 40px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+        .imageIndoor {
+            border-radius: 15px;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.navBatton .gridNav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40px;
+  border: 1px solid black;
+  border-radius: 16px;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.navBatton .gridNav .linksitems {
+  color: black;
+  text-decoration: none;
+}
+.navBatton .gridNav .socilalItem {
+  align-content: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+.navBatton .gridNav .socilalItem.active {
+  background-color: black;
+}
+.navBatton .gridNav .socilalItem.active .linksitems {
+  color: white;
+}/*# sourceMappingURL=NavStyles.css.map */

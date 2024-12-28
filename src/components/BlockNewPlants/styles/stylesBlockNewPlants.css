@@ -1,0 +1,73 @@
+.blogNewPlants {
+  width: 100%;
+  grid-row: 6;
+  justify-content: space-between;
+  grid-column: 1;
+  overflow: hidden;
+  position: relative;
+}
+.blogNewPlants .currency {
+  display: flex;
+  justify-content: space-between;
+}
+.blogNewPlants .currency .btnPrice {
+  cursor: pointer;
+}
+.blogNewPlants .showcaseBlocks {
+  justify-content: space-between;
+  display: grid;
+  align-self: center;
+  grid-template-rows: 200px 50px 50px 50px;
+  grid-template-columns: 1fr;
+  height: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+.blogNewPlants .showcaseBlocks .isFavorite {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  top: 20px;
+}
+.blogNewPlants .showcaseBlocks .btn__showcase {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  background-color: black;
+  border: 0;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.blogNewPlants .showcaseBlocks .btn__showcase:hover {
+  width: 60px;
+}
+.blogNewPlants .showcaseBlocks .btn__showcase #svgLinear {
+  stroke: white;
+}
+.blogNewPlants .showcaseBlocks .btn__showcase .arrowBtnShowCase {
+  width: 50%;
+  height: 100%;
+}
+.blogNewPlants .showcaseBlocks .tittles {
+  z-index: 2;
+  grid-row: 2;
+  align-self: center;
+}
+.blogNewPlants .showcaseBlocks .tittles .desc {
+  font-size: 13px;
+  color: gray;
+}
+.blogNewPlants .showcaseBlocks .imageShowCase {
+  grid-row: 1;
+  z-index: 0;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}/*# sourceMappingURL=stylesBlockNewPlants.css.map */

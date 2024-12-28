@@ -1,0 +1,54 @@
+.assortMent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 300px;
+    grid-row: 3;
+    grid-column: 1;
+    overflow: hidden;
+    position: relative;
+    .blockNav {
+        grid-row: 1;
+        grid-column: 1;
+        align-self: center;
+        .chooseBlocks {
+            display: grid;
+            grid-template-columns: 1fr 1fr 5px;
+            align-items: center;
+            .seeAll {
+                grid-column: 2;
+                justify-self: end;
+                border-radius: 50px;
+                border: 2px solid rgb(199, 197, 197);
+                padding: 10px 30px 10px 30px;
+                cursor: pointer;
+                &.active {
+                    background: black;
+                    color: white;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            .btnAssort {
+                border: 2px solid rgb(199, 197, 197);
+                border-radius: 50px;
+                height: 100%;
+                cursor: pointer;
+                padding: 10px 10px 10px 10px;
+                &.active {
+                    background: black;
+                    color: white;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+            .blockSeeBtn {
+                display: flex;
+                justify-content: space-between;
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+    }
+    .blockCategories {
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+}

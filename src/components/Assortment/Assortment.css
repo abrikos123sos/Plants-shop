@@ -1,0 +1,54 @@
+.assortMent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 300px;
+  grid-row: 3;
+  grid-column: 1;
+  overflow: hidden;
+  position: relative;
+}
+.assortMent .blockNav {
+  grid-row: 1;
+  grid-column: 1;
+  align-self: center;
+}
+.assortMent .blockNav .chooseBlocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5px;
+  align-items: center;
+}
+.assortMent .blockNav .chooseBlocks .seeAll {
+  grid-column: 2;
+  justify-self: end;
+  border-radius: 50px;
+  border: 2px solid rgb(199, 197, 197);
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+}
+.assortMent .blockNav .chooseBlocks .seeAll.active {
+  background: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.assortMent .blockNav .chooseBlocks .btnAssort {
+  border: 2px solid rgb(199, 197, 197);
+  border-radius: 50px;
+  height: 100%;
+  cursor: pointer;
+  padding: 10px 10px 10px 10px;
+}
+.assortMent .blockNav .chooseBlocks .btnAssort.active {
+  background: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.assortMent .blockNav .chooseBlocks .blockSeeBtn {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1;
+  grid-row: 1;
+}
+.assortMent .blockCategories {
+  box-sizing: border-box;
+  overflow: hidden;
+}/*# sourceMappingURL=Assortment.css.map */

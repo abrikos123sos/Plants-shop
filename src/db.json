@@ -1,0 +1,123 @@
+{
+    "dataplants": [{
+            "id": 1,
+            "image": "./img/Peperomia/peperomia.jpg",
+            "title": "Peperomia Plants",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 122
+        },
+        {
+            "id": 2,
+            "image": "./img/Feadle/feadleleaffig.jpg",
+            "title": "Fiddle-Leaf Fig",
+            "desc": "Medium moisture, well-draining",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 160
+        },
+        {
+            "id": 3,
+            "image": "./img/Calethia/calethia.jpg",
+            "title": "Calathea Orbifolia",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 152
+        },
+        {
+            "id": 4,
+            "image": "./img/Nettles/nettleblock.jpg",
+            "title": "Nettles Plants",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 92
+        },
+        {
+            "id": 5,
+            "image": " ./img/Succulents/succulentsblock.jpg",
+            "title": "Succulents Plants",
+            "desc": "Medium moisture, well-draining",
+            "currency": "$",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "price": 210
+        },
+        {
+            "id": 6,
+            "image": "./img/PeaceLily/Peacelilyblock.jpg",
+            "title": "Peace Lily plants",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 152
+        },
+        {
+            "id": 7,
+            "image": "./img/Aeschynanthus/Aeschynanthusblock .jpg",
+            "title": "Peace Lily plants",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 340
+        },
+        {
+            "id": 8,
+            "image": "./img/africanvoilets/africanvoiletblock.jpg",
+            "title": "Peace Lily plants",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 139
+        },
+        {
+            "id": 9,
+            "image": " ./img/Succulents/succulentsblock.jpg",
+            "title": "Succulents Plants",
+            "desc": "Medium moisture, well-draining",
+            "currency": "$",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "price": 210
+        },
+        {
+            "id": 10,
+            "image": "./img/PeaceLily/Peacelilyblock.jpg",
+            "title": "Peace Lily plants",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 152
+        },
+        {
+            "id": 11,
+            "image": "./img/Aeschynanthus/Aeschynanthusblock .jpg",
+            "title": "Peace Lily plants",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 340
+        },
+        {
+            "id": 12,
+            "image": "./img/africanvoilets/africanvoiletblock.jpg",
+            "title": "Peace Lily plants",
+            "desc": "Moist but well-drained",
+            "check": "./img/svg/checkbtn.svg",
+            "uncheck": "./img/svg/uncheckbtn.svg",
+            "currency": "$",
+            "price": 139
+        }
+    ]
+}

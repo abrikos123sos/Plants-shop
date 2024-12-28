@@ -1,0 +1,72 @@
+.blockAssort {
+  grid-row: 1;
+  grid-column: 2;
+  display: grid;
+}
+
+.BlockGridGap2 {
+  grid-row: 4;
+  grid-column: 2;
+  display: grid;
+  color: white;
+  grid-template-columns: 250px 100px;
+  grid-template-rows: 100%;
+  grid-column-gap: 5px;
+}
+
+.circleChoose {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+  border: 1px solid white;
+  border-radius: 15px;
+  position: relative;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.chooseBlock {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  overflow: hidden;
+  cursor: pointer;
+}
+.chooseBlock.active {
+  border: 1px solid rgb(235, 250, 149);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.chooseBlock .imageStyle {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.assortInfo {
+  height: 100%;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 15px;
+  border: 1px solid white;
+  word-break: normal;
+}
+
+.infoAssort {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.subInfo {
+  margin-left: 10px;
+  margin-top: 20px;
+}/*# sourceMappingURL=BlockAssort.css.map */

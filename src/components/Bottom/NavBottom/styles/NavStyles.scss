@@ -1,0 +1,30 @@
+.navBatton {
+    .gridNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 40px;
+        border: 1px solid black;
+        border-radius: 16px;
+        position: relative;
+        padding-left: 40px;
+        padding-right: 40px;
+        .linksitems {
+            color: black;
+            text-decoration: none;
+        }
+        .socilalItem {
+            align-content: center;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 15px;
+            height: 100%;
+            width: 100%;
+            &.active {
+                background-color: black;
+                .linksitems {
+                    color: white;
+                }
+            }
+        }
+    }
+}
