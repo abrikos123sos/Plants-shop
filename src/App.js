@@ -14,10 +14,6 @@ import FavoriteDrawer from './components/BlockNewPlants/FavoriteDrawer';
 import MyContext from './apjscontext';
 
 
-/*https://dribbble.com/shots/22341969-Plant-shop-landing-page 
-,
-https://www.google.com/search?q=pet+freandly+plants+categories&oq=pet+freandly+plants+categories&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKABMgkIAhAhGAoYoAHSAQkxMDIyM2owajSoAgCwAgE&sourceid=chrome&ie=UTF-8*/ 
-
 function App() {
 
 
