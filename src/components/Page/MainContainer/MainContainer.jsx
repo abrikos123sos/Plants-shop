@@ -14,7 +14,12 @@ import Container from '../../Container/Container';
 import './MainStyle/style.css';
 
 
+
+
 const MainContainer = () => {
+
+
+
   return (
     <div className='mainContainer'>   
         <Container/>
@@ -38,65 +43,7 @@ const MainContainer = () => {
     }
      ]}/>
      <NewPlants/>
-     <BlockNewPlants
-     itemsPlants ={[
-      {
-        id:1,
-        image: './img/Peperomia/peperomia.jpg',
-        btn:'./img/svg/right-arrow-white.svg',
-        title: "Peperomia Plants",
-        desc: "Moist but well-drained",
-        currency: '$',
-        price: 122
-        
-      },
-      {
-        id: 2,
-        image: './img/Feadle/feadleleaffig.jpg',
-        title: "Fiddle-Leaf Fig",
-        desc: "Medium moisture, well-draining",
-        btn:'./img/svg/right-arrow-white.svg',
-        currency: '$',
-        price: 160
-      },
-      {
-        id: 3,
-        image: './img/Calethia/calethia.jpg',
-        title: "Calathea Orbifolia",
-        btn:'./img/svg/right-arrow-white.svg',
-        desc: "Moist but well-drained",
-        currency: '$',
-        price: 152
-      },
-      {
-        id:4,
-        image: './img/Nettles/nettleblock.jpg',
-        title: "Nettles Plants",
-        desc: "Moist but well-drained",
-        btn:'./img/svg/right-arrow-white.svg',
-        currency: '$',
-        price: 92
-        
-      },
-      {
-        id: 5,
-        image: './img/Succulents/succulentsblock.jpg',
-        title: "Succulents Plants",
-        desc: "Medium moisture, well-draining",
-        currency: '$',
-        btn:'./img/svg/right-arrow-white.svg',
-        price: 210
-      },
-      {
-        id: 6,
-        image: './img/PeaceLily/Peacelilyblock.jpg',
-        title: "Peace Lily plants",
-        desc: "Moist but well-drained",
-        btn:'./img/svg/right-arrow-white.svg',
-        currency: '$',
-        price: 152
-      },    
-     ]}/>
+     <BlockNewPlants />
   <TittleCollection/>
   <IndoorCollections collection = {[
     {
@@ -149,8 +96,12 @@ const MainContainer = () => {
   }
   ]}/>
   <Bottom/>
+
     </div>
   )
 }
+
+
+
 
 export default MainContainer;

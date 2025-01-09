@@ -2,7 +2,6 @@
     grid-row: 2;
     grid-column: 2;
     background-color: white;
-    height: auto;
     border-radius: 15px;
     position: relative;
     .moreassortment {
@@ -52,13 +51,25 @@
         }
         .blockCart {
             display: grid;
-            grid-template-columns: 100px 1fr 30px;
+            grid-template-columns: 100px 1fr 100px;
             grid-template-rows: 60px;
             grid-column: 4;
             align-self: center;
-            justify-self: end;
+            justify-self: center;
             cursor: default;
             position: relative;
+            .profile {
+                place-self: center;
+                width: 30px;
+                grid-column: 3;
+                grid-row: 1;
+                cursor: pointer;
+                height: 30px;
+                .user {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             .cartsBlocks {
                 display: flex;
                 position: relative;
@@ -78,6 +89,7 @@
                     justify-content: center;
                     .countercart {
                         color: white;
+                        font-size: 13px;
                     }
                 }
                 #cart {
@@ -88,6 +100,7 @@
             .currenc {
                 grid-column: 2;
                 align-self: center;
+                font-weight: bold;
                 justify-self: center;
             }
         }
@@ -107,10 +120,9 @@
     .moreassortment {
         display: flex;
         padding: 20px;
-        min-height: 740px;
-        grid-column-gap: 10px;
+        min-height: 800px;
+        justify-content: space-around;
         border-radius: 0px 0px 15px 10px;
-        grid-row-gap: 20px;
         flex-flow: wrap;
         background-color: rgb(247, 225, 225);
     }

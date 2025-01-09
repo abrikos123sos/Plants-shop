@@ -9,7 +9,10 @@ const [isActive, setIsActive] = useState(null)
 
 const onSelectItem = (id) =>{
     setIsActive(id);
+
 }
+
+
 
   return (
     <div className='assortMent'>

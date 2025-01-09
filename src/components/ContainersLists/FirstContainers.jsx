@@ -1,19 +1,40 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../BlockNewPlants/styles/stylesBlockNewPlants.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import LikeSvg from '../LikeSvg/LikeSvg';
+
+import svgLike from './favirute.svg';
+import disLike from './unfavorite.svg';
+
+import MyContext from '../../apjscontext';
+import FavoriteDrawer from '../BlockNewPlants/FavoriteDrawer';
 
 
 
-const FirstContainers = ({btn,image,title,desc,currency,price}) => {
 
 
-  return (
+
+const FirstContainers = ({id,btn,image,title,desc,currency,price, added,onRemove}) => {
+
+const {isItemAddToFavorite} = React.useContext(MyContext)
+
+  const [isLike, setIsLike] = useState(null)
+  const handleClick = () =>{
+      setIsLike(isLike);
+      added({btn,image,title,desc,currency,price,id})
+     
+  }
+
+
+ 
+
+return (
+
 <div className='blocksMain'>
+
 <div className='showcaseBlocks'>
   <div className='isFavorite'>
-<LikeSvg/>
+  <div onClick={handleClick} className='LikeOrDislike'>
+        <img src={!isItemAddToFavorite(id) === true ? svgLike : disLike}  className="like" alt='like'/>
+    </div>
 </div>
       <p className='tittles'>{title} <br/>
       <span className='desc'>{desc}</span></p>
@@ -23,7 +44,9 @@ const FirstContainers = ({btn,image,title,desc,currency,price}) => {
             <button className='btn__showcase'><img className='arrowBtnShowCase' src={btn} alt='icon rigth arrow Button'></img></button>
             </div>
              </span>
+
     </div>
+
     </div>
 
   )

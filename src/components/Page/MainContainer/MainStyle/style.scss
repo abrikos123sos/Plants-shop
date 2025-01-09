@@ -5,12 +5,13 @@
     border: 5px solid white;
     grid-template-columns: 1fr;
     cursor: default;
-    grid-template-rows: 700px 200px 380px 70px 100px 380px 150px 500px 200px 150px 600px 300px 50px 400px;
+    grid-template-rows: 750px 200px 380px 70px 100px 380px 150px 500px 200px 150px 600px 300px 50px 400px;
     filter: grayscale(20%);
     border-radius: 15px;
     background-color: rgb(245, 243, 242);
     box-sizing: content-box;
     overflow: hidden;
+    position: relative;
     .container {
         background: url(../../../../../public/img/background.jpg) center;
         background-size: cover;
@@ -19,7 +20,7 @@
         padding-left: 15px;
         padding-right: 15px;
         grid-template-columns: 0.1fr 100% 0.1fr;
-        grid-template-rows: 20px 80px 400px 150px 50px;
+        grid-template-rows: 20px 80px 450px 150px 50px;
         transition: 0.5s ease-in-out;
         &.blockGround1 {
             background: url(../../../../../public/img/background.jpg) center;
@@ -39,24 +40,24 @@
         grid-row: 3;
         grid-column: 2;
         color: white;
-        grid-template-columns: 0.2fr 4fr 0.2fr;
+        grid-template-columns: 4fr;
         grid-template-rows: 20% 50% 20%;
         .subtittle {
             grid-row: 1;
-            grid-column: 2;
+            grid-column: 1;
             font-weight: bold;
             align-self: end;
         }
         .tittle {
             grid-row: 2;
-            grid-column: 2;
+            grid-column: 1;
             align-self: center;
             justify-self: center;
             font-size: 30vh;
         }
         .slogantittle {
             grid-row: 3;
-            grid-column: 2;
+            grid-column: 1;
             justify-self: center;
             align-self: end;
         }

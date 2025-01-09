@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/cartsPrice.css';
+import AppContext from '../Page/ShopPage/context';
 
-const CartPrice = ({image,title,desc,check,uncheck,currency,price,onPlus}) => {
+const CartPrice = ({id,image,title,desc,check,uncheck,currency,price,onPlus, setCounter}) => {
 
-
-
-
-
-const [active, setActive] = useState();
+    const {isItemAddToCart} = React.useContext(AppContext)
 
 const handleAddBtn = () =>{
-    setActive(!active)
-onPlus({image,title,desc,check,uncheck,currency,price})
+      setCounter(id)
+      onPlus({id,image,title,desc,check,uncheck,currency,price})
+
 }
 
 
@@ -30,8 +28,8 @@ onPlus({image,title,desc,check,uncheck,currency,price})
             <span className='price'>{price}</span>
             </div>
             <div className='blockBtnAdd'>
-                <button onClick={handleAddBtn} className='btnAdd'>
-                   {active ? <img className='imgcheck _btn' src={check} alt="button"/> :
+               <button onClick={handleAddBtn} className='btnAdd'>
+                   {isItemAddToCart(id) ? <img className='imgcheck _btn' src={check} alt="button"/> :
                     <img className='imguncheck _btn' src={uncheck} alt="button"/>}
                 </button>
             </div>
