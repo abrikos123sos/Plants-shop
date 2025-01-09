@@ -10,9 +10,37 @@
 .App {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 50px auto 50px;
+  grid-template-rows: 50px 1fr 200px;
   background-color: #347f6e;
   position: relative;
+  overflow: hidden;
+}
+.App .linkedF {
+  position: fixed;
+  left: 70px;
+  bottom: 100px;
+}
+.App .favoriteLink {
+  display: flex;
+  z-index: 6;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 70px;
+}
+.App .favoriteLink .links {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.App .favoriteLink .favorite {
+  width: 100%;
+  height: 100%;
 }
 .App .swiper-pagination {
   grid-row: 3;

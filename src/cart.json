@@ -1,3 +1,31 @@
 {
-  "cart": []
+  "cart": [
+    {
+      "id": "1",
+      "btn": "./img/svg/right-arrow-white.svg",
+      "image": "./img/Peperomia/peperomia.jpg",
+      "title": "Peperomia Plants",
+      "desc": "Moist but well-drained",
+      "currency": "$",
+      "price": 122
+    },
+    {
+      "id": "2",
+      "btn": "./img/svg/right-arrow-white.svg",
+      "image": "./img/Feadle/feadleleaffig.jpg",
+      "title": "Fiddle-Leaf Fig",
+      "desc": "Medium moisture, well-draining",
+      "currency": "$",
+      "price": 160
+    },
+    {
+      "id": "9d12",
+      "btn": "./img/svg/right-arrow-white.svg",
+      "image": "./img/Calethia/calethia.jpg",
+      "title": "Calathea Orbifolia",
+      "desc": "Moist but well-drained",
+      "currency": "$",
+      "price": 152
+    }
+  ]
 }
